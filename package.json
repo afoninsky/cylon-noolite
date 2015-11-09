@@ -1,7 +1,7 @@
 {
   "name": "cylon-noolite",
   "description": "cylon.js driver/connector for MT1132 module (noolite wireless IoT)",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "devDependencies": {
     "chai": "3.0.0",
     "coveralls": "^2.11.4",
