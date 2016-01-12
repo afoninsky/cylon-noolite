@@ -21,14 +21,20 @@ describe('index', function() {
   describe('#driver', function() {
     it('returns an instance of the Driver', function() {
       expect(index.driver({
-        connection: index.adaptor({ robot: {} })
+        connection: index.adaptor({
+          device: 'rx2164',
+          debug: true
+        })
       })).to.be.instanceOf(Driver);
     });
   });
 
   describe('#adaptor', function() {
     it('returns an instance of the Adaptor', function() {
-      expect(index.adaptor({ robot: {} })).to.be.instanceOf(Adaptor);
+      expect(index.adaptor({
+        device: 'rx2164',
+        debug: true
+      })).to.be.instanceOf(Adaptor);
     });
   });
 });

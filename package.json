@@ -1,18 +1,18 @@
 {
   "name": "cylon-noolite",
-  "description": "cylon.js driver/connector for MT1132 module (noolite wireless IoT)",
-  "version": "1.0.2",
+  "description": "cylon.js driver/connector for noolite wireless power keys",
+  "version": "1.0.4",
   "devDependencies": {
-    "chai": "3.0.0",
-    "coveralls": "^2.11.4",
-    "istanbul": "^0.4.0",
-    "jshint": "^2.8.0",
-    "mocha": "2.2.5",
-    "pre-git": "^0.6.2"
+    "chai": "3.4.1",
+    "coveralls": "^2.11.6",
+    "istanbul": "^0.4.2",
+    "jshint": "^2.9.1-rc2",
+    "mocha": "2.3.4",
+    "pre-git": "^3.3.0"
   },
   "dependencies": {
     "cylon": "1.2.0",
-    "noolite-uart": "^1.0.1"
+    "noolite": "^2.0.2"
   },
   "main": "index.js",
   "scripts": {
@@ -29,5 +29,14 @@
   "license": "Apache-2.0",
   "pre-push": [
     "npm test"
-  ]
+  ],
+  "config": {
+    "pre-git": {
+      "commit-msg": [],
+      "pre-commit": [],
+      "pre-push": [],
+      "post-commit": [],
+      "post-merge": []
+    }
+  }
 }
