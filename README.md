@@ -17,7 +17,7 @@ var Cylon = require('cylon');
 Cylon.robot({
   name: 'Ivan',
   connections: {
-    module: { adaptor: 'noolite', port: '/dev/ttyAMA0' }
+    module: { adaptor: 'noolite', device: 'rx2164' }
   },
   devices: {
     corridor: { driver: 'noolite', channel: 1 }
